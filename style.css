@@ -1,0 +1,45 @@
+body {
+    background-color:#003 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #1010e989;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 5px;
+    width: 80%;
+}
+
+form input {
+    background-color: #0000aaca;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px 10px;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+form button {
+    background-color: #1414d4;
+    color: white;
+    border: none;
+    flex-grow: 1;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+
+    form input {
+        flex-basis: 30px;
+    }
+}
